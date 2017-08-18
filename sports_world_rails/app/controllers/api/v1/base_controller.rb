@@ -1,4 +1,4 @@
-class Api::V2::BaseController < ActionController::Base
+class Api::V1::BaseController < ActionController::Base
   include ApplicationHelper
 
   around_action :dev_env_debug, if: -> { Rails.env.development? }
