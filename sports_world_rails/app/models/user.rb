@@ -3,4 +3,7 @@ class User < ActiveRecord::Base
   include ApplicationHelper
 
   has_one :session, dependent: :destroy
+
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
 end

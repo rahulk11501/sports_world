@@ -14,4 +14,4 @@ development:
   <<: *default
   username: <%= ENV['DB_USER'] %>
   password: <%= ENV['DB_PASS'] %>
-  database: sports_world_dev
+  database: dogether_development
